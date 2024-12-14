@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum BiohackingLab - Communauté d'Optimisation</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rejoignez la communauté BiohackingLab et échangez avec des experts et passionnés du biohacking.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/community.css">
+</head>
+<body>
+    <div class="forum-container">
+        <header class="forum-header">
+            <nav class="forum-nav">
+                <div class="forum-logo">BiohackingLab Community</div>
+                <div class="forum-search">
+                    <input type="search" placeholder="Rechercher dans le forum...">
+                </div>
+                <div class="forum-user-menu">
+                    <span class="user-level">Niveau: Expert</span>
+                    <span class="user-points">Points: 5,240</span>
+                    <img src="../assets/images/user-avatar.jpg" alt="Avatar" class="user-avatar">
+                </div>
+            </nav>
+        </header>
+
+        <main class="forum-main">
+            <aside class="forum-sidebar">
+                <div class="category-list">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li class="active"><a href="#general">Général</a></li>
+                        <li><a href="#focus">Focus & TDAH</a></li>
+                        <li><a href="#sleep">Sommeil</a></li>
+                        <li><a href="#stress">Gestion du Stress</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="community-stats">
+                    <h3>Statistiques</h3>
+                    <ul>
+                        <li>Membres: 12,458</li>
+                        <li>Discussions: 3,245</li>
+                        <li>Messages: 45,789</li>
+                    </ul>
+                </div>
+
+                <div class="top-contributors">
+                    <h3>Top Contributeurs</h3>
+                    <ul>
+                        <li>
+                            <img src="../assets/images/contributor1.jpg" alt="Contributeur">
+                            <span>Marie L.</span>
+                            <span class="points">15,420 pts</span>
+                        </li>
+                        <!-- Autres contributeurs -->
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="forum-content">
+                <div class="content-header">
+                    <h1>Discussions Récentes</h1>
+                    <button class="new-topic-btn">Nouvelle Discussion</button>
+                </div>
+
+                <div class="topic-filters">
+                    <select>
+                        <option>Plus récents</option>
+                        <option>Plus populaires</option>
+                        <option>Non résolus</option>
+                    </select>
+                </div>
+
+                <div class="topic-list">
+                    <article class="topic-card featured">
+                        <div class="topic-meta">
+                            <span class="topic-category">Focus</span>
+                            <span class="topic-status hot">Popular</span>
+                        </div>
+                        <h2>Guide Complet : Stack Nootropique pour Débutants</h2>
+                        <div class="topic-stats">
+                            <span>👁️ 1,245 vues</span>
+                            <span>💬 89 réponses</span>
+                            <span>⭐ 45 favoris</span>
+                        </div>
+                        <div class="topic-author">
+                            <img src="../assets/images/author1.jpg" alt="Auteur">
+                            <span>Par Thomas D.</span>
+                            <span class="topic-date">Il y a 2 heures</span>
+                        </div>
+                    </article>
+
+                    <!-- Autres topics -->
+                </div>
+
+                <div class="community-events">
+                    <h2>Événements à Venir</h2>
+                    <div class="event-cards">
+                        <article class="event-card">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">DÉC</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Webinaire : Optimisation du Sommeil</h3>
+                                <p>Avec Dr. Sophie Martin, experte en médecine du sommeil</p>
+                                <button class="register-btn">S'inscrire</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="activity-sidebar">
+                <div class="activity-feed">
+                    <h3>Activité Récente</h3>
+                    <ul>
+                        <li>
+                            <span class="activity-icon">💬</span>
+                            <span class="activity-text">Marie a répondu à "Protocol Sommeil"</span>
+                            <span class="activity-time">5min</span>
+                        </li>
+                        <!-- Autres activités -->
+                    </ul>
+                </div>
+
+                <div class="challenge-box">
+                    <h3>Challenge du Mois</h3>
+                    <div class="challenge-content">
+                        <h4>21 Jours de Méditation</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <p>156 participants - 12 jours restants</p>
+                        <button class="join-challenge-btn">Rejoindre</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script type="module">
+        import BiohackingTracker from '../assets/js/tracking.js';
+        // Initialisation du tracking
+        const tracker = new BiohackingTracker(userId);
+    </script>
+</body>
+</html>

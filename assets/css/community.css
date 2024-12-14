@@ -1,0 +1,200 @@
+/* Styles pour la communauté et le forum */
+
+/* Layout */
+.forum-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 30px;
+}
+
+/* Header */
+.forum-header {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.forum-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sidebar */
+.forum-sidebar {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-list li:hover {
+    background-color: #f5f5f5;
+}
+
+.category-list li.active {
+    background-color: #0984e3;
+    color: white;
+}
+
+/* Topics */
+.topic-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-2px);
+}
+
+.topic-card.featured {
+    border-left: 4px solid #0984e3;
+}
+
+.topic-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.topic-category {
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.topic-status.hot {
+    background: #ff7675;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Events */
+.event-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-date {
+    background: #0984e3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+}
+
+.event-date .day {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Activity Feed */
+.activity-feed {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-feed ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-feed li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Challenge Box */
+.challenge-box {
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.progress-bar {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    height: 10px;
+    margin: 15px 0;
+}
+
+.progress-bar .progress {
+    background: white;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Buttons */
+.new-topic-btn, .register-btn, .join-challenge-btn {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-topic-btn:hover, .register-btn:hover, .join-challenge-btn:hover {
+    background: #0873c4;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .forum-container {
+        grid-template-columns: 200px 1fr;
+    }
+    
+    .activity-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .forum-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .forum-sidebar {
+        display: none;
+    }
+}
